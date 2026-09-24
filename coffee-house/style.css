@@ -169,24 +169,19 @@ body.dark {
   height: 52px;
   cursor: pointer;
 }
-.fullmoon-light{
-   fill: var( --background-page);
-}
-.fullmoon-dark{
-   fill:  var(--dark-text-accent);
-}
-.moon-light{
+
+/* body.dark .moon {
   fill: var(--text-primary);
 }
-.moon-dark{
-  stroke:var(--dark-text-accent);;
+body.dark .fullmoon {
+  fill: var(--dark-text-accent);
 }
-body.dark .moon {
-  fill: #FFD700;
+body.dark .sun {
+  fill: var(--dark-text-primary);
 }
-body.dark.fullmoon {
-  fill: #2C2C2C;
-}
+body.dark .fullsun {
+  fill: var(--dark-bg-page);
+} */
 .menu-coffee-link {
   color: inherit;
   display: flex;
