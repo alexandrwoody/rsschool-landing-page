@@ -7,8 +7,7 @@
     <title>Menu</title>
     <link rel="stylesheet" href="style.css">
     <link type="image/x-icon" href="./img/favicon.ico" rel="shortcut icon">
-    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
-        rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet">
 </head>
 
 <body>
@@ -39,12 +38,30 @@
                     </li>
 
                 </ul>
+
                 <div class="header-menu">
-                    <p class="menu-coffee"><a href="" class="menu-coffee-link">Menu</a></p>
-                    <img src="./img/coffee-cup.svg" alt="" class="cooffee-cup">
+                    <div class="header-theme-switcher">
+                        <svg class="light" width="36" height="36" viewBox="0 0 36 36" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="36" height="36" rx="18" fill="#B0907A" />
+                            <path
+                                d="M17 10V8C17 7.45 17.45 7 18 7C18.55 7 19 7.45 19 8V10C19 10.55 18.55 11 18 11C17.45 11 17 10.55 17 10ZM24.36 13.05L25.77 11.63C26.16 11.24 26.16 10.61 25.77 10.22C25.38 9.83 24.75 9.83 24.36 10.22L22.95 11.64C22.56 12.03 22.56 12.66 22.95 13.05C23.34 13.44 23.97 13.44 24.36 13.05ZM28 17H26C25.45 17 25 17.45 25 18C25 18.55 25.45 19 26 19H28C28.55 19 29 18.55 29 18C29 17.45 28.55 17 28 17ZM18 25C17.45 25 17 25.45 17 26V28C17 28.55 17.45 29 18 29C18.55 29 19 28.55 19 28V26C19 25.45 18.55 25 18 25ZM11.64 13.05L10.22 11.64C9.83 11.25 9.83 10.61 10.22 10.23C10.61 9.85 11.25 9.84 11.63 10.23L13.04 11.64C13.43 12.03 13.43 12.67 13.04 13.05C12.65 13.43 12.02 13.44 11.64 13.05ZM22.95 22.95C22.56 23.34 22.56 23.98 22.95 24.36L24.36 25.77C24.75 26.16 25.39 26.16 25.77 25.77C26.16 25.38 26.16 24.74 25.77 24.36L24.36 22.95C23.98 22.56 23.34 22.56 22.95 22.95ZM8 19H10C10.55 19 11 18.55 11 18C11 17.45 10.55 17 10 17H8C7.45 17 7 17.45 7 18C7 18.55 7.45 19 8 19ZM11.64 25.78L13.05 24.37C13.44 23.98 13.44 23.34 13.05 22.96C12.66 22.58 12.02 22.57 11.64 22.96L10.23 24.37C9.84 24.76 9.84 25.4 10.23 25.78C10.61 26.17 11.25 26.17 11.64 25.78ZM18 12C14.69 12 12 14.69 12 18C12 21.31 14.69 24 18 24C21.31 24 24 21.31 24 18C24 14.69 21.31 12 18 12Z"
+                                fill="#E1D4C9" />
+                        </svg>
+                        <svg class="dark" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 0C4.03 0 0 4.03 0 9C0 13.97 4.03 18 9 18C13.97 18 18 13.97 18 9C18 8.54 17.96 8.08 17.9 7.64C16.92 9.01 15.32 9.9 13.5 9.9C10.52 9.9 8.1 7.48 8.1 4.5C8.1 2.69 8.99 1.08 10.36 0.0999999C9.92 0.0399999 9.46 0 9 0Z"
+                                fill="#403F3D" />
+                        </svg>
+                    </div>
+                    <a href="menu.html" class="menu-coffee-link">
+                        <span class="menu-coffee">Menu</span>
+                        <img src="./img/coffee-cup.svg" alt="cofee" class="coffee-cup">
+                    </a>
                 </div>
             </nav>
-           
+
             <button class="burger" data-burger><span class="burger-line line1"></span>
                 <span class="burger-line line2"></span></button>
         </header>
@@ -77,11 +94,11 @@
                 <div class="menu-card">
                     <img src="./img/coffee-1.png" alt="coffee" class="card-picture">
                     <div class="card-decsription">
-                       <div class="card-content">
+                        <div class="card-content">
                             <p class="card-title">Irish coffee</p>
                             <p class="card-subtitle">Fragrant black coffee with Jameson Irish whiskey and whipped milk
                             </p>
-                       </div>
+                        </div>
                         <p class="card-coffee-price">$7.00</p>
                     </div>
                 </div>
@@ -90,7 +107,8 @@
                     <div class="card-decsription">
                         <div class="card-content">
                             <p class="card-title">Kahlua coffee</p>
-                            <p class="card-subtitle">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk
+                            <p class="card-subtitle">Classic coffee with milk and Kahlua liqueur under a cap of frothed
+                                milk
                             </p>
                         </div>
                         <p class="card-coffee-price">$7.00</p>
@@ -119,10 +137,10 @@
                 <div class="menu-card invisible">
                     <img src="./img/coffee-5.png" alt="coffee" class="card-picture">
                     <div class="card-decsription">
-                      <div class="card-content">
+                        <div class="card-content">
                             <p class="card-title">Espresso</p>
                             <p class="card-subtitle">Classic black coffee</p>
-                      </div>
+                        </div>
                         <p class="card-coffee-price">$4.50</p>
                     </div>
                 </div>
@@ -131,7 +149,8 @@
                     <div class="card-decsription">
                         <div class="card-content">
                             <p class="card-title">Latte</p>
-                            <p class="card-subtitle">Espresso coffee with the addition of steamed milk and dense milk foam
+                            <p class="card-subtitle">Espresso coffee with the addition of steamed milk and dense milk
+                                foam
                             </p>
                         </div>
                         <p class="card-coffee-price">$5.50</p>
@@ -140,20 +159,20 @@
                 <div class="menu-card invisible">
                     <img src="./img/coffee-7.png" alt="coffee" class="card-picture">
                     <div class="card-decsription">
-                       <div class="card-content">
+                        <div class="card-content">
                             <p class="card-title">Latte macchiato</p>
                             <p class="card-subtitle">Espresso with frothed milk and chocolate</p>
-                       </div>
+                        </div>
                         <p class="card-coffee-price">$5.50</p>
                     </div>
                 </div>
                 <div class="menu-card invisible">
                     <img src="./img/coffee-8.png" alt="coffee" class="card-picture">
                     <div class="card-decsription">
-                       <div class="card-content">
+                        <div class="card-content">
                             <p class="card-title">Coffee with cognac</p>
                             <p class="card-subtitle">Fragrant black coffee with cognac and whipped cream</p>
-                       </div>
+                        </div>
                         <p class="card-coffee-price">$6.50</p>
                     </div>
                 </div>
@@ -170,19 +189,16 @@
                 </h2>
                 <div class="foooter-buttons">
                     <a class="social-icon" href="https://twitter.com/" title="twitter" target="_blank"
-                        rel="noopener"><img src="./img/twitter.svg" alt="twitter"
-                                class="social-img"></a>
+                        rel="noopener"><img src="./img/twitter.svg" alt="twitter" class="social-img"></a>
                     <a class="social-icon" href="https://www.instagram.com/" title="instagram" target="_blank"
-                        rel="noopener"><img src="./img/instagram.svg" alt="instagram"
-                                class="social-img"></a>
+                        rel="noopener"><img src="./img/instagram.svg" alt="instagram" class="social-img"></a>
                     <a class="social-icon" href="https://www.facebook.com/" title="facebook" target="_blank"
-                        rel="noopener"><img src="./img/facebook.svg" alt="facebook"
-                                class="social-img"></a>
+                        rel="noopener"><img src="./img/facebook.svg" alt="facebook" class="social-img"></a>
                 </div>
             </div>
             <div class="footer-right">
                 <h3 class="contact-us">Contact us</h3>
-               <div class="contacs-info">
+                <div class="contacs-info">
                     <div class="footer-adress">
                         <img src="./img/pin-alt.svg" alt="pin-alt" class="adres-img">
                         <a href="https://www.google.com/maps/place/286+Cadman+Plaza+W,+Brooklyn,+NY+11201,+%D0%A1%D0%A8%D0%90/@40.6956498,-73.9961685,17z/data=!3m1!4b1!4m10!1m2!2m1!1sCadman+Plaza+286!3m6!1s0x89c25a49b649b8c3:0x6342a2291cea2e!8m2!3d40.6956458!4d-73.9912976!15sChBDYWRtYW4gUGxhemEgMjg2kgEKc3VicHJlbWlzZeABAA!16s%2Fg%2F11s2lgz8ns?entry=ttu"
@@ -196,13 +212,14 @@
                         <img src="./img/clock.svg" alt="clock" class="clock">
                         <span class="footer-time">Mon-Sat: 9:00 AM – 23:00 PM</span>
                     </div>
-               </div>
+                </div>
             </div>
 
         </footer>
 
     </div>
     <script src="index.js"></script>
+    <script src="theme_switcher.js"></script>
 </body>
 
 </html>
