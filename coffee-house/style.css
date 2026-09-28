@@ -169,7 +169,17 @@ body.dark {
   height: 52px;
   cursor: pointer;
 }
-
+.header-theme-switcher-768 {
+  display: none;
+  align-items: center;
+  gap: 17px;
+  border: 1px solid #c1b6ad;
+  border-radius: 100px;
+  padding: 4px;
+  width: 104px;
+  height: 52px;
+  cursor: pointer;
+}
 /* body.dark .moon {
   fill: var(--text-primary);
 }
@@ -553,8 +563,6 @@ body.dark .fullsun {
   font-feature-settings:
     "clig" off,
     "liga" off;
-
-  /* Desktop/Heading/heading-2 */
   font-family: Inter;
   font-size: 60px;
   font-style: normal;
@@ -958,8 +966,12 @@ body.dark .fullsun {
   }
 
   .header {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto; /* 1fr = большое растянутое расстояние */
   }
-
+  .header-theme-switcher {
+    display: none;
+  }
   .header-nav {
     display: flex;
     flex-direction: column;
@@ -978,7 +990,11 @@ body.dark .fullsun {
     height: 924px;
     align-items: center;
   }
-
+  .header-theme-switcher-768 {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+  }
   .nav-list {
     display: flex;
     flex-direction: column;
