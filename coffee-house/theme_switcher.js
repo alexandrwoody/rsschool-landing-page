@@ -1,5 +1,7 @@
 const light = document.querySelector('.light');
 const dark = document.querySelector('.dark');
+const light_768 =document.querySelector('.light-768');
+const dark_768 =document.querySelector('.dark-768');
 const moon = document.querySelector('.moon');
 const fullmoon = document.querySelector('.fullmoon');
 if (localStorage.getItem('theme') === 'dark') {
@@ -96,4 +98,54 @@ light.addEventListener('click', () => {
     });
 
 });
+dark_768.addEventListener('click', () => {
+    localStorage.setItem(
+        'theme',
+        'dark' 
+    );
+    document.body.classList.remove('light');
+    document.body.classList.add('dark');
+    dark.querySelectorAll('path').forEach(p => {
+        p.style.fill = '#b0907a;'
 
+    });
+
+    dark_768.querySelectorAll('rect').forEach(r => {
+        r.style.fill = '#e1d4c9';
+
+    });
+    light_768.querySelectorAll('rect').forEach(p => {
+        p.style.fill = '#292826';
+
+    });
+    light_768.querySelectorAll('path').forEach(p => {
+        p.style.fill = '#e1d4c9';
+
+    });
+});
+light_768.addEventListener('click', () => {
+    localStorage.setItem(
+        'theme',
+        'light'
+    );
+    document.body.classList.remove('dark');
+    document.body.classList.add('light');
+    dark_768.querySelectorAll('path').forEach(p => {
+        p.style.fill = '#292826';
+
+    });
+
+    dark_768.querySelectorAll('rect').forEach(r => {
+        r.style.fill = '#e1d4c9';
+
+    });
+    light_768.querySelectorAll('rect').forEach(p => {
+        p.style.fill = '#b0907a';
+
+    });
+    light_768.querySelectorAll('path').forEach(p => {
+        p.style.fill = '#e1d4c9';
+
+    });
+
+});
