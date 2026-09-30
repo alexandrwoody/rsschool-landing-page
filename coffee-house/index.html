@@ -113,12 +113,9 @@
                 <h2 class="favorite-title" id="favorite-coffee">
                     Choose your <span class="favorite">favorite</span> coffee
                 </h2>
-                <div class="coffe-select">
-                    <button class="coffee-button" id="btn-left">
-                        <img src="./img/arrow-left.svg" alt="arrow" class="arrow">
-                    </button>
-                    <div class="coffee-carousel-wrapper">
-                        <div class="carousel trasitiion-right">
+                <div class="slider" id="slider">
+                    <div class="slider__track" id="track">
+                        <div class="slider__slide">
                             <div class="item" id="item-left">
                                 <div class="coffee-content">
                                     <div class="coffee-img"></div>
@@ -130,6 +127,8 @@
 
                                 </div>
                             </div>
+                        </div>
+                        <div class="slider__slide">
                             <div class="item" id="item-active">
                                 <div class="coffee-content">
                                     <div class="coffee-img2"></div>
@@ -140,6 +139,8 @@
 
                                 </div>
                             </div>
+                        </div>
+                        <div class="slider__slide">
                             <div class="item" id="item-right">
                                 <div class="coffee-content">
                                     <div class="coffee-img3"></div>
@@ -153,13 +154,20 @@
                         </div>
                     </div>
 
-                    <button class="coffee-button" id="btn-right"><img src="./img/arrow-left.svg" alt="arrow"
-                            class="arrow right"></button>
-                </div>
-                <div class="favorite-coffee-lines">
-                    <div class="favorite-coffee-line selected-line"></div>
-                    <div class="favorite-coffee-line"></div>
-                    <div class="favorite-coffee-line"></div>
+                    <button class="slider__btn slider__btn--prev" id="prev" aria-label="Назад"> <svg width="14"
+                            height="13" viewBox="0 0 14 13" fill="none" 
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 6.5H0.5M6.5 12.5L0.5 6.5L6.5 0.5" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></button>
+                    <button class="slider__btn slider__btn--next" id="next" aria-label="Вперёд"><svg width="14"
+                            height="13" viewBox="0 0 14 13" fill="none" 
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 6.5H13M7 12.5L13 6.5L7 0.5" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></button>
+
+                    <div class="slider__dots" id="dots"></div>
                 </div>
 
 
@@ -248,6 +256,7 @@
     </div>
     <script src="index.js"></script>
     <script src="theme_switcher.js"></script>
+    <script src="slider.js"></script>
 </body>
 
 </html>
